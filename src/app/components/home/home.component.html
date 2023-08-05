@@ -1,0 +1,8 @@
+<h3>Home component</h3>
+<hr>
+
+<app-box [data]="boxData" (sendInfoFromChild)="receivedInformation($event)" ></app-box>
+<br>
+<p>Information received from child => {{childInformation}}</p>
+<br>
+<button class="btn btn-danger" (click)="changeBoxDataTitle()">CLICK ME</button>

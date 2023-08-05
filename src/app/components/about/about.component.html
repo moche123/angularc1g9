@@ -1,0 +1,11 @@
+<h3>ng-container: Para directivas estructurales</h3>
+<ng-container *ngFor="let user of users | orderByAge">
+    <h4>{{user.name}} - {{user.age}}</h4>
+</ng-container>
+
+
+<hr>
+
+<ng-container *ngFor="let pokemon of pokemons$ | async">
+    {{pokemon.name}} - 
+</ng-container>
